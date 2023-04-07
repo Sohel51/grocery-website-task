@@ -11,10 +11,9 @@ const MapSection = () => {
   return (
     <div className="bg-gray-100 py-10">
       <div className="container mx-auto">
-        <h2 className="text-2xl font-bold mb-4">Location</h2>
-        <div style={{ height: '400px', width: '100%' }}>
+        <div style={{ height: '300px', width: '80%', margin: 'auto', border: '5px solid #04d3ee4a', borderRadius: '15px' }}>
           <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyBEu8tXYc1K9RqCMmOiW69XhRREw3N1z74' }}
+            bootstrapURLKeys={{ key: process.env.PUBLIC_GOOGLE_MAPS_API_KEY }}
             defaultCenter={center}
             defaultZoom={zoom}
           >

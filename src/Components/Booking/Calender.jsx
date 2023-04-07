@@ -11,9 +11,9 @@ const CalendarSection = () => {
 
     return (
         <div>
-            <div className="bg-gray-100 p-10">
+            <div className="p-5">
                 <div className="container mx-auto">
-                    <Calendar className="w-96"
+                    <Calendar
                         onChange={onChange}
                         value={date}
                     />

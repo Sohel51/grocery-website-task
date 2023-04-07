@@ -1,29 +1,44 @@
 import React from 'react'
-import Header from '../Header/Header'
 import CustomerReview from '../Review/CustomerReview'
 import Blogs from '../Blogs/Blogs'
 import Footer from '../Footer/Footer'
 import FeaturedServicesSection from '../Services/Services'
+import { Link } from 'react-router-dom'
+import { TypeAnimation } from 'react-type-animation';
+import Banner from '../../../images/food.png';
 
 const Home = () => {
     return (
         <div>
-            {/* Hero */}
+            {/* About The Company */}
             <section className="bg-white border-b py-8">
                 <div className="container mx-auto flex flex-wrap pt-4 pb-12">
                     <div className="w-full md:w-1/2 md:pr-12">
                         <h1 className="font-bold text-3xl md:text-5xl leading-tight mb-6">
-                            Welcome to My Website
+                            Welcome to Grocery Site
                         </h1>
-                        <p className="text-xl mb-8">
+                        <p className="text-xl mb-4">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in scelerisque lorem, ac bibendum justo. Integer quis est et est maximus vehicula.
                         </p>
-                        <a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#">
-                            Call to Action
-                        </a>
+                            <TypeAnimation
+                                sequence={[
+                                    ' Breakfast',
+                                    1000,
+                                    'Lunch',
+                                    2000,
+                                    'Dinner',
+                                ]}
+                                wrapper="span"
+                                cursor={true}
+                                repeat={Infinity}
+                                style={{ fontSize: '1.5em', display: 'inline-block', color: 'rgb(14 165 233)', fontWeight: 'bold' }}
+                            /> <br /><br />
+                        <Link className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" to="/contact">
+                            Contact Us
+                        </Link>
                     </div>
                     <div className="w-full md:w-1/2">
-                        <img className="w-full md:max-w-sm mx-auto" src="https://source.unsplash.com/7H77FWkK_x8/400x400" alt="Hero" />
+                        <img className="w-full md:max-w-sm mx-auto" src={Banner} alt="Banner" />
                     </div>
                 </div>
             </section>
