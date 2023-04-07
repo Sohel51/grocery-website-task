@@ -14,7 +14,7 @@ const MapSection = () => {
         <h2 className="text-2xl font-bold mb-4">Location</h2>
         <div style={{ height: '400px', width: '100%' }}>
           <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyBEu8tXYc1K9RqCMmOiW69XhRREw3N1z74' }}
+            bootstrapURLKeys={{ key: '' }}
             defaultCenter={center}
             defaultZoom={zoom}
           >
