@@ -16,17 +16,21 @@ export default function NewProduct() {
     };
 
     return (
-        <div>
-            <h2>Services</h2>
-            <label htmlFor="category">Select a category:</label>
-
-            <select onChange={handleCategoryChange} name="" id="">
-                <option value="men's clothing">men's clothing</option>
-                <option value="jewelery">jewelery</option>
-                <option value="electronics">electronics</option>
-                <option value="women's clothing">women's clothing</option>
-            </select>
-
+        <div className="max-w-6xl m-auto px-4 py-10">
+            <div className="">
+                <h2 className="text-3xl font-semibold mb-4">Choose Product</h2>
+                <label htmlFor="category" className="text-gray-700 text-2xl font-bold mb-2">Select a category:</label>
+                <select
+                    onChange={handleCategoryChange}
+                    name="" id=""
+                    className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                    <option value="men's clothing">Men's clothing</option>
+                    <option value="jewelery">Jewelry</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="women's clothing">Women's clothing</option>
+                </select>
+            </div>
+            <hr />
             <div className="flex flex-wrap">
                 {services.filter((value) => {
                     return value.category === selectedOption;
@@ -41,7 +45,7 @@ export default function NewProduct() {
                             <div>
                                 <div className="p-4 h-48">
                                     <h3 className="font-semibold text-lg mb-2">{service.title}</h3>
-                                    <p className="text-gray-600">{service.category}</p>
+                                    <p className="text-gray-600 uppercase ">{service.category}</p>
                                 </div>
                                 <div className="flex items-center p-4">
                                     <span className="font-semibold text-xl">${service.price}</span>

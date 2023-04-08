@@ -17,7 +17,7 @@ const CalendarSection = () => {
                         onChange={onChange}
                         value={date}
                     />
-                    <p className="text-gray-600 mt-4">Available times on {date.toLocaleDateString()}:</p>
+                    <p className="text-gray-600 mt-4">Available Times - {date.toLocaleDateString()}</p><hr />
                     <ul className="list-disc pl-8">
                         <li>10:00am - 11:00am</li>
                         <li>1:00pm - 2:00pm</li>
