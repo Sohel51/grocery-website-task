@@ -12,8 +12,12 @@ const MapSection = () => {
     <div className="bg-gray-100 py-10">
       <div className="container mx-auto">
         <div style={{ height: '300px', width: '80%', margin: 'auto', border: '5px solid #04d3ee4a', borderRadius: '15px' }}>
-          <GoogleMapReact
+          {/* <GoogleMapReact
+<<<<<<< HEAD
             bootstrapURLKeys={{ key: process.env.PUBLIC_GOOGLE_MAPS_API_KEY }}
+=======
+            bootstrapURLKeys={{ key: '' }}
+>>>>>>> a4f1b4fcde70ffd7cdac0e526bf2dea777e3fc5f
             defaultCenter={center}
             defaultZoom={zoom}
           >
@@ -22,7 +26,7 @@ const MapSection = () => {
               lng={center.lng}
               className="bg-red-500 w-8 h-8 rounded-full"
             />
-          </GoogleMapReact>
+          </GoogleMapReact> */}
         </div>
       </div>
     </div>
