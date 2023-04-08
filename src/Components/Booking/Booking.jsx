@@ -23,10 +23,6 @@ const Booking = () => {
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
 
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form data:', formData);
